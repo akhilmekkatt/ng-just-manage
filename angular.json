@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "just-manage"
+    }
+  },
+  "defaultProject": "just-manage",
+  "cli": {
+    "analytics": "26f96fae-e1d2-44c1-a58f-f34d4fd4c4a7"
+  }
 }

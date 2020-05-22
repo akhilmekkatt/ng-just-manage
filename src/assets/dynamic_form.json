@@ -1,0 +1,62 @@
+[
+    {
+        "label": "Name",
+        "type": "text",
+        "validation": [
+            {
+                "maxlength": 10,
+                "minlength": "2",
+                "pattern": ""
+            }
+        ],
+        "visibility": true,
+        "isEditable": true,
+        "placeholderText": "Please Enter Field 1",
+        "fieldGroup": "text",
+        "value": "",
+        "defaultValue": ""
+    },
+    {
+        "label": "Gender",
+        "type": "select",
+        "validation": [
+            {
+                "maxlength": 10,
+                "minlength": "2",
+                "pattern": ""
+            }
+        ],
+        "visibility": true,
+        "isEditable": false,
+        "placeholderText": "Please Enter Field 1",
+        "fieldGroup": "text",
+        "value": [
+            {
+                "label": "Male",
+                "value": "M"
+            },
+            {
+                "label": "Female",
+                "value": "F"
+            }
+        ],
+        "defaultValue": "Male"
+    },
+    {
+        "label": "Designation",
+        "type": "textarea",
+        "validation": [
+            {
+                "maxlength": 10,
+                "minlength": "2",
+                "pattern": ""
+            }
+        ],
+        "visibility": true,
+        "isEditable": true,
+        "placeholderText": "Please Enter Field 1",
+        "fieldGroup": "text",
+        "value": "",
+        "defaultValue": ""
+    }
+]

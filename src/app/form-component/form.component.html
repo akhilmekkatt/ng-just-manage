@@ -1,0 +1,22 @@
+<ng-container *ngFor="let field of formFields">
+
+    <div class="input-field">
+        <label>{{field.label}}</label>
+        <ng-container [ngSwitch]="field.type">
+            <ng-container *ngSwitchCase="'text'">
+                <input type="text" placeholder="{{field.placeholderText}}" [disabled]="!field.isEditable" />
+            </ng-container>
+            <ng-container *ngSwitchCase="'textarea'">
+                <textarea placeholder="{{field.placeholderText}}" [disabled]="!field.isEditable"></textarea>
+            </ng-container>
+            <ng-container *ngSwitchCase="'select'">
+                <select [disabled]="!field.isEditable">
+                    <option *ngFor="let option of field.value">{{option.label}}</option>
+                </select>
+            </ng-container>
+
+
+            <div *ngSwitchDefault>NA</div>
+        </ng-container>
+    </div>
+</ng-container>
